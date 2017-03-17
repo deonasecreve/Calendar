@@ -21,7 +21,7 @@
     	die('No connection: ' . mysqli_connect_error());
 	}
    
-	$sql = "SELECT * FROM birthdays ORDER BY month ASC";
+	$sql = "SELECT * FROM birthdays ORDER BY month, day ASC";
 
 	$result = $connection->query($sql);
 
